@@ -1,0 +1,254 @@
+[1 09/13/23:05:50] *** [sipTxClientNew] Transaction count: 1
+[2 09/13/23:05:50] *** [Client_Invite_SM] Entering
+[3 09/13/23:05:50] *** [TRANSPORT] Sending request *** 
+
+INVITE sip:Bob@192.168.56.1:2000 SIP/2.0
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PC
+Contact:sip:CCF@192.168.56.1:5065
+Content-Length:359
+Content-Type:application/sdp
+CSeq:1 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+Max-Forwards:10
+To:sip:Bob@192.168.56.1:2000
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+v=0
+o=CCF 42504188 42504188 IN IP4 192.168.56.1
+s=Session SDP
+c=IN IP4 192.168.56.1
+t=0 0
+m=audio 9002 RTP/AVP 0 8 3 4 18
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+a=rtpmap:8 PCMA/8000
+a=ptime:20
+a=rtpmap:3 GSM/8000
+a=ptime:20
+a=rtpmap:4 G723/8000
+a=ptime:20
+a=rtpmap:18 G729/8000
+a=ptime:20
+m=video 9004 RTP/AVP 34
+a=rtpmap:34 H263/90000
+a=ptime:30
+
+[4 09/13/23:05:50] *** [TRANSPORT] End of message *** 
+
+[5 09/13/23:05:50] *** [Client_Invite_SM] Tx -> CALLING
+[6 09/13/23:05:50] *** [Client_Invite_SM] Leaving
+[7 09/13/23:05:50] *** [UDPEventHandle] Entering
+[8 09/13/23:05:50] *** [UDPEventHandle] Receiving incoming response ***
+
+SIP/2.0 302 Moved Temporarily
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PC
+Contact:sip:Bob@192.168.56.1:5060
+Content-Length:0
+CSeq:1 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+[9 09/13/23:05:50] *** [UDPEventHandle] End of Message ***
+
+[10 09/13/23:05:50] *** [Client_Invite_SM] Entering
+[11 09/13/23:05:50] *** [Client_Invite_SM] RSP Received
+[12 09/13/23:05:50] *** [sipTxClientNew] Transaction count: 2
+[13 09/13/23:05:50] *** [Client_Invite_SM] Entering
+[14 09/13/23:05:50] *** [TRANSPORT] Sending request *** 
+
+INVITE sip:Bob@192.168.56.1:506[24 09/13/23:05:50] *** [UDPEventHandle] Entering
+[25 09/13/23:05:50] *** [UDPEventHandle] Receiving incoming request ***
+
+INVITE sip:Bob@192.168.56.1:5060 SIP/2.0
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Contact:sip:CCF@192.168.56.1:5065
+Content-Length:359
+Content-Type:application/sdp
+CSeq:2 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+Max-Forwards:10
+To:sip:Bob@192.168.56.1:2000
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bK415e580ce633c3ae33e8062b894f964d
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+v=0
+o=CCF 42504188 42504188 IN IP4 192.168.56.1
+s=Session SDP
+c=IN IP4 192.168.56.1
+t=0 0
+m=audio 9002 RTP/AVP 0 8 3 4 18
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+a=rtpmap:8 PCMA/8000
+a=ptime:20
+a=rtpmap:3 GSM/8000
+a=ptime:20
+a=rtpmap:4 G723/8000
+a=ptime:20
+a=rtpmap:18 G729/8000
+a=ptime:20
+m=video 9004 RTP/AVP 34
+a=rtpmap:34 H263/90000
+a=ptime:30
+
+[26 09/13/23:05:50] *** [UDPEventHandle] End of Message ***
+
+[27 09/13/23:05:50] *** [UDPEventHandle] Create a new transaction ***
+[28 09/13/23:05:50] *** [sipTxServerNew] Transaction count: 2
+[29 09/13/23:05:50] *** [Server_Invite_SM] Entering
+[30 09/13/23:05:50] *** [Server_Invite_SM] Tx -> INIT
+[31 09/13/23:05:50] *** [TRANSPORT] Sending response *** 
+
+SIP/2.0 100 Trying
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+Content-Type:application/sdp
+CSeq:2 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000[23 09/13/23:05:50] *** [UDPEventHandle] Entering
+[24 09/13/23:05:50] *** [UDPEventHandle] unKnown UDP Command 
+[25 09/13/23:05:50] *** [UDPEventHandle] Leaving
+[26 09/13/23:05:50] *** [UDPEventHandle] Entering
+[27 09/13/23:05:50] *** [UDPEventHandle] Receiving incoming response ***
+
+SIP/2.0 100 Trying
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+Content-Type:application/sdp
+CSeq:2 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bK415e580ce633c3ae33e8062b894f964d
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+[28 09/13/23:05:50] *** [UDPEventHandle] End of Message ***
+
+[29 09/13/23:05:50] *** [Client_Invite_SM] Entering
+[30 09/13/23:05:50] *** [Client_Invite_SM] RSP Received
+[31 09/13/23:05:50] *** [Client_Invite_SM] Tx -> PROCEEDING
+[32 09/13/23:05:50] *** [Client_Invite_SM] Leaving
+[33 09/13/23:05:50] *** [UDPEventHandle] Leaving
+[34 09/13/23:05:50] *** [UDPEventHandle] Entering
+[35 09/13/23:05:50] *** [UDPEventHandle] Receiving incoming response ***[42 09/13/23:06:34] *** [uaDlgPrintAllTx] txnum = 1[43 09/13/23:06:34] *** [uaDlgPrintAllTx] TX_SERVER_INVITE[44 09/13/23:06:34] *** [uaDlgPrintAllTx] TX_PROCEEDING[45 09/13/23:06:34] *** [sipTxEvtDispatch] Process RspSendQ : size = 1 ***
+[46 09/13/23:06:34] *** [Server_Invite_SM] Entering
+[47 09/13/23:06:34] *** [TRANSPORT] Sending response *** 
+
+SIP/2.0 200 OK
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Contact:sip:Bob@192.168.56.1:5060
+Content-Length:214
+Content-Type:application/sdp
+CSeq:2 INVITE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000;tag=c2lwOkJvYkAxOTIuMTY4LjU2LjE6MjAwMA
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bK415e580ce633c3ae33e8062b894f964d
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+v=0
+o=Bob 42547853 42547853 IN IP4 192.168.56.1
+s=Session SDP
+c=IN IP4 192.168.56.1
+t=0 0
+m=audio 9000 RTP/AVP 0
+a=rtpmap:0 PCMU/8000
+a=ptime:20
+m=video 9006 RTP/AVP 34
+a=rtpmap:34 H263/90000
+a=ptime:30
+[48 09/13/23:06:34] *** [TRANSPORT] End of message *** 
+
+[49 09/13/23:06:34] *** [Server_Invite_SM] Tx -> COMPLETED
+[50 09/13/23:06:34] *** [Server_Invite_SM] Leaving
+[51 09/13/23:06:34] *** [UDPEventHandle] Entering
+[52 09/13/23:06:34] *** [UDPEventHandle] Receiving incoming request ***
+
+ACK sip:Bob@192.168.56.1:5060 SIP/2.0
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+CSeq:2 ACK
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000;tag=c2lwOkJvYkAxOTIuMTY4LjU2LjE6MjAwMA
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bK415e580ce633c3ae33e8062b894f964d
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKed5109ea930122a706e53dc4dcb83049
+
+[53 09/13/23:06:34] *** [UDPEventHandle] End of Message ***
+
+[54 09/13/23:06:34] *** [UDPEventHandle] Found a existing transaction ***
+[55 09/13/23:06:34] *** [Server_Invite_SM] Entering
+[56 09/13/23:06:34] *** [Server_Invite_SM] ACK Received
+[57 09/13/23:06:34] *** [TxEvtCB] Receive ACK
+[58 09/13/23:06:34] *** [Server_Invite_SM] Tx -> CONFIRMED
+[59 09/13/23:06:34] *** [Server_Invite_SM] Leaving
+[60 09/13/23:06:34] *** [UDPEventHandle] Leaving
+[61 09/13/23:06:39] *** [sipTxTimerManager] Entering
+[62 09/13/23:06:39] *** [sipTxTimerManager] Timer I Fired
+[63 09/13/23:06:39] *** [Server_Invite_SM] Entering
+[64 09/13/23:06:39] *** [Server_Invite_SM] Process Timer I
+[65 09/13/23:06:39] *** [Server_Invite_SM] Tx -> TERMINATED
+[66 09/13/23:06:39] *** [TxEvtCB] ref count : 1
+[67 09/13/23:06:39] *** [TxEvtCB] Destroy transaction
+[68 09/13/23:06:39] *** [Server_Invite_SM] Leaving
+[69 09/13/23:06:39] *** [sipTxTimerManager] Leaving
+[70 09/13/23:07:22] *** [UDPEventHandle] Entering
+[71 09/13/23:07:22] *** [UDPEventHandle] Receiving incoming request ***
+
+BYE sip:Bob@192.168.56.1:5060 SIP/2.0
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+CSeq:3 BYE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000;tag=c2lwOkJvYkAxOTIuMTY4LjU2LjE6MjAwMA
+Via:SIP/2.0/UDP  192.168.56.1:5065;branch=z9hG4bKf705406c7b2f7d8d0e201672ae57d7e5
+
+[72 09/13/23:07:22] *** [UDPEventHandle] End of Message ***
+
+[73 09/13/23:07:22] *** [UDPEventHandle] Create a new transaction ***
+[74 09/13/23:07:22] *** [sipTxServerNew] Transaction count: 3
+[75 09/13/23:07:22] *** [Server_Non_Invite_SM] Entering
+[76 09/13/23:07:22] *** [Server_Non_Invite_SM] Tx -> INIT
+[77 09/13/23:07:22] *** [TxEvtCB] Receive REQ
+[78 09/13/23:07:22] *** [Server_Non_Invite_SM] Tx -> TRYING
+[79 09/13/23:07:22] *** [Server_Non_Invite_SM] Leaving
+[80 09/13/23:07:22] *** [UDPEventHandle] Leaving
+[81 09/13/23:07:22] *** [sipTxEvtDispatch] Process RspSendQ : size = 1 ***
+[82 09/13/23:07:22] *** [Server_Non_Invite_SM] Entering
+[83 09/13/23:07:22] *** [TRANSPORT] Sending response *** 
+
+SIP/2.0 200 OK
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+CSeq:3 BYE
+From:sip:CCF@192.168.56.1:2000;tag=c2lwOkNDRkAxOTIuMTY4LjU2LjE6MjAwMA
+To:sip:Bob@192.168.56.1:2000;tag=c2lwOkJvYkAxOTIuMTY4LjU2LjE6MjAwMA
+Via[76 09/13/23:07:22] *** [UDPEventHandle] Entering
+[77 09/13/23:07:22] *** [UDPEventHandle] Receiving incoming response ***
+
+SIP/2.0 200 OK
+Call-ID:05315150-D1B9-4912-721B-C618A45BAEC9@Miracle-PCredirect
+Content-Length:0
+CSeq:3 BYE
+From:sip:CCF@192.168[87 09/13/23:07:22] *** [sipTxFree] Transaction count: 2
+[88 09/13/23:07:54] *** [sipTxTimerManager] Entering
+[89 09/13/23:07:54] *** [sipTxTimerManager] Timer J Fired
+[90 09/13/23:07:54] *** [Server_Non_Invite_SM] Entering
+[91 09/13/23:07:54] *** [Server_Non_Invite_SM] Process Timer J
+[92 09/13/23:07:54] *** [Server_Non_Invite_SM] Tx -> TERMINATED
+[93 09/13/23:07:54] *** [TxEvtCB] ref count : 1
+[94 09/13/23:07:54] *** [TxEvtCB] Destroy transaction
+[95 09/13/23:07:54] *** [sipTxFree] Transaction count: 1
+[96 09/13/23:07:54] *** [Server_Non_Invite_SM] Leaving
+[97 09/13/23:07:54] *** [sipTxTimerManager] Leaving
+[98 09/14/01:26:55] *** [sipTxFree] Transaction count: 0
+[99 09/14/01:26:55] *** [sipTxLibEnd] TxList size = 0
+[100 09/14/01:26:55] *** [sipTxLibEnd] Transaction count: 0
+3/23:07:27] *** [Client_Non_Invite_SM] Tx -> TERMINATED
+[89 09/13/23:07:27] *** [TxEvtCB] ref count : 1
+[90 09/13/23:07:27] *** [TxEvtCB] Destroy transaction
+[91 09/13/23:07:27] *** [sipTxFree] Transaction count: 2
+[92 09/13/23:07:27] *** [sipTxFree] Transaction count: 1
+[93 09/13/23:07:27] *** [Client_Non_Invite_SM] Leaving
+[94 09/13/23:07:27] *** [sipTxTimerManager] Leaving
+[95 09/14/01:26:56] *** [sipTxLibEnd] TxList size = 1
+[96 09/14/01:26:56] *** [sipTxFree] Transaction count: 0
+[97 09/14/01:26:56] *** [sipTxLibEnd] Transaction count: 0
