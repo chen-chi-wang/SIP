@@ -6,7 +6,7 @@
 
 **2. Implement a SIP redirect server for accepting SIP `INVITE` request, and send back "SIP 302 Moved Temporarily" response with the `To` address of callee.**
 
-### SIP Overview
+## SIP Overview
 The Session Initiation Protocol (SIP) is a signaling protocol for controlling multimedia communication sessions.
 
 It is widely adopted in the voice and video calls of Internet telephony.
@@ -31,7 +31,7 @@ It is widely adopted in the voice and video calls of Internet telephony.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://i.imgur.com/xijUTUs.png" width="500">
 
-### Data Structures and Functions
+## Data Structures and Functions
 Implement a infinite loop for listening to incoming request.
 
 If comes a `REGISTER` request, store the `To` and `Contact` in the header fields, which is the mapping of a client's identity.
